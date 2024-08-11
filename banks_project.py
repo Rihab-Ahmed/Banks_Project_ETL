@@ -27,7 +27,7 @@ def extract(url, table_attribs):
     
     data_list = []  # List to collect rows of data
     
-    table = soup.find_all('table')[0]  # Assuming the first table is the target
+    table = soup.find_all('table')[0]  
     
     for row in table.find('tbody').find_all('tr'):
         cols = row.find_all('td')
